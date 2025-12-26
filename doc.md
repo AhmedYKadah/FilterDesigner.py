@@ -48,7 +48,7 @@ and we solve the least-squares problem exactly using
 
 $
 \mathbf{\hat{h}}=
-(\mathbf{F}^\top \mathbf{F})^{-1}\mathbf{F}^\top \mathbf{H_d}
+(\mathbf{F}^T \mathbf{F})^{-1}\mathbf{F}^T \mathbf{H_d}
 $
 
 ## Weighted Least Squares FIR filter design
@@ -58,7 +58,7 @@ $\min (W^{1/2}(\mathbf{H_d}-\mathbf{\hat{H}_d}))^2$
 
 $
 \mathbf{\hat{h}}=
-(\mathbf{F}^\top \mathbf{W}\mathbf{F})^{-1}\mathbf{F}^\top \mathbf{W}\mathbf{H_d}
+(\mathbf{F}^T \mathbf{W}\mathbf{F})^{-1}\mathbf{F}^T \mathbf{W}\mathbf{H_d}
 $
 
 ## Parks-Mcclellan Exchange FIR filter design
