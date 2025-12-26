@@ -79,6 +79,27 @@ In summary, our specs are:
 
 ## Part 2: Filter Design and Analysis
 ### 2.1 Multiple Filter Designs
+
+| Implementation | Filter type | Method | File name | Meets Specs | Initial Rating|
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+|MATLAB | FIR | Low+High LS | Filter File Name | TBD | TBD|
+|MATLAB | FIR | All-Band LS | Filter File Name | TBD | TBD|
+|MATLAB | FIR | Bandstop LS | Filter File Name | TBD | TBD|
+|MATLAB | FIR | Bandstop equiripple | Filter File Name | TBD | TBD|
+|MATLAB | FIR | Bandstop Window (type) | Filter File Name | TBD | TBD|
+|MATLAB | IIR | Direct-Form Notching| Filter File Name | TBD | TBD|
+|MATLAB | IIR | Bandstop Butterworth| Filter File Name | TBD | TBD|
+|MATLAB | IIR | Bandstop Chebyshev Type I| Filter File Name | TBD | TBD|
+|MATLAB | IIR | Bandstop Chebyshev Type II| Filter File Name | TBD | TBD|
+|Python (Ours) | FIR | Bandstop LS | Filter File Name | TBD | TBD|
+|Python (Ours) | FIR | Bandstop equiripple | Filter File Name | TBD | TBD|
+|Python (Ours) | IIR | Direct-Form Notching| Filter File Name | TBD | TBD|
+|Python (Ours) | IIR | Manual Pole-Zero Placement| Filter File Name | TBD | TBD|
+
+<!--|MATLAB | FIR | Low+High equiripple | Filter File Name | TBD | TBD|-->
+<!--|MATLAB | FIR | All-Band equiripple | Filter File Name | TBD | TBD|-->
+<!--|MATLAB | FIR | Low+High Window (type) | Filter File Name | TBD | TBD|-->
+<!--|MATLAB | FIR | All-Band Window (type) | Filter File Name | TBD | TBD|-->
 ### 2.2 Decision Analysis
 ### 2.3 Implementation and Validation
 
