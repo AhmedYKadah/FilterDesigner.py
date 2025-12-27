@@ -19,3 +19,9 @@ def _pz2iir(p=[],z=[],g=1):
 """
 2- Implement a stability checker
 """
+
+def _checkStability(a):
+    poles=np.roots(([1, *a]))
+    return np.linalg.norm(poles,np.inf)>1.0
+    pass
+
