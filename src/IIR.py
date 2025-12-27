@@ -11,7 +11,7 @@ def _pz2iir(p=[],z=[],g=1):
         b = g*np.pad(b, (order-len(b), 0), mode='constant', constant_values=0)[::-1]
         a = np.pad(a, (order-len(a), 0), mode='constant', constant_values=0)[::-1]
 
-        b=b*a[0]
+        b=b/a[0]
         a=a[1:]/a[0]
     return b.real ,a.real
     pass
