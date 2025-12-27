@@ -79,7 +79,8 @@ In summary, our specs are:
 
 ## Part 2: Filter Design and Analysis
 ### 2.1 Multiple Filter Designs
-
+We will be comparing 4 of our python-implemented filters against 9 MATLAB implemented filters made using the filterDesigner methods. 
+We create an initial filtering stage to get the filters which meet the minimum specs, and then we will compare their performance individually and eventually make a decision about which filter comes out on top in terms of its overall performance.
 | Implementation | Filter type | Method | File name | Meets Specs | Initial Rating|
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
 |MATLAB | FIR | Low+High LS | Filter File Name | TBD | TBD|
@@ -92,15 +93,16 @@ In summary, our specs are:
 |MATLAB | IIR | Bandstop Chebyshev Type I| Filter File Name | TBD | TBD|
 |MATLAB | IIR | Bandstop Chebyshev Type II| Filter File Name | TBD | TBD|
 |Python (Ours) | FIR | Bandstop LS | Filter File Name | TBD | TBD|
+|Python (Ours) | FIR | Bandstop WLS | Filter File Name | TBD | TBD|
 |Python (Ours) | FIR | Bandstop equiripple | Filter File Name | TBD | TBD|
 |Python (Ours) | IIR | Direct-Form Notching| Filter File Name | TBD | TBD|
 |Python (Ours) | IIR | Manual Pole-Zero Placement| Filter File Name | TBD | TBD|
 
-<!--|MATLAB | FIR | Low+High equiripple | Filter File Name | TBD | TBD|-->
-<!--|MATLAB | FIR | All-Band equiripple | Filter File Name | TBD | TBD|-->
-<!--|MATLAB | FIR | Low+High Window (type) | Filter File Name | TBD | TBD|-->
-<!--|MATLAB | FIR | All-Band Window (type) | Filter File Name | TBD | TBD|-->
 ### 2.2 Decision Analysis
+| File name | Stop Band Attenuation ($w=0.3$) | Passband Ripple ($w=0.3$)| Complexity ($w=0.1$)|  Coefficients ($w=0.2$)| Phase Linearity ($w=0.1$)| Utility |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| | |  |  |  | |
+
 ### 2.3 Implementation and Validation
 
 ## Part 3: Performance Evaluation
