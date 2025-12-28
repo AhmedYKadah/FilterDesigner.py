@@ -388,7 +388,7 @@ for idx = 1:num_filters
         xlim([0 specs.fs/2]);
         
         % Save figure
-        saveas(gcf, sprintf('../outputs/filter_validation_%s.png', strrep(filename, '.mat', '')));
+        saveas(gcf, sprintf('../Example/figures/filter_validation_%s.png', strrep(filename, '.mat', '')));
         
     catch ME
         fprintf('  ERROR: Failed to process filter\n');
