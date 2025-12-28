@@ -92,11 +92,11 @@ We create an initial filtering stage to get the filters which meet the minimum s
 |MATLAB | IIR | Bandstop Butterworth| IIR 4th-order filter.mat | Yes | TBD|
 |MATLAB | IIR | Bandstop Chebyshev Type I| IIR 4th-order Chebyshev I.mat | Yes | TBD|
 |MATLAB | IIR | Bandstop Chebyshev Type II| 4th-order IIR chebyshev II.mat | Yes | TBD|
-|Python (Ours) | FIR | Bandstop LS | Filter File Name | TBD | TBD|
-|Python (Ours) | FIR | Bandstop WLS | Filter File Name | TBD | TBD|
-|Python (Ours) | FIR | Bandstop equiripple | Filter File Name | TBD | TBD|
-|Python (Ours) | IIR | Direct-Form Notching| Filter File Name | TBD | TBD|
-|Python (Ours) | IIR | Manual Pole-Zero Placement| Filter File Name | TBD | TBD|
+|Python (Ours) | FIR | Bandstop LS | python_ls_Filter | No | TBD|
+|Python (Ours) | FIR | Bandstop WLS | python_wls_Filter | No | TBD|
+|Python (Ours) | IIR | Direct-Form Notching| python_df_Filter | Yes | TBD|
+|Python (Ours) | IIR | Manual Pole-Zero Placement| python_pz_Filter | Yes | TBD|
+<!--|Python (Ours) | FIR | Bandstop equiripple | Filter File Name | TBD | TBD|-->
 
 ### 2.2 Decision Analysis
 | File name | Stop Band Attenuation ($w=0.3$) | Passband Ripple ($w=0.3$)| Complexity ($w=0.1$)|  Coefficients ($w=0.2$)| Phase Linearity ($w=0.1$)| Utility |
