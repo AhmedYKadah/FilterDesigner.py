@@ -107,11 +107,55 @@ We create an initial filtering stage to get the filters which meet the minimum s
 | python_pz_Filter.mat | 300.00 | 0.83 | 9 | 5 | 0 | 7.5 |
 | python_df_Filter.mat | 292.04 | 0.68 | 9 | 5 | 0 | 7.5 |
 ### 2.3 Implementation and Validation
+Based on the above metrics, we conclude that the best filter is Direct-Form Notching filter, which gives the following response.
+<figure>
+    <img src="figures/filter_validation_Notching.png"
+         alt="Direct-Form Notching Filter with Bandwidth = 10 Hz"
+         height="600">
+    <figcaption>Direct-Form Notching Filter with Bandwidth = 10 Hz</figcaption>
+</figure>
+
 
 ## Part 3: Performance Evaluation
+In this part we view the final results and evalute the performance of the filter when applied to the signal at hand.
 ### 3.1 Frequency Domain Analysis
-### 3.2 Time Domain and Perceptual Evaluation
+As mentioned above, or goal is mainly to remove the 60Hz frequency component from the signal with minimal distrotion to the signal.
 
+<figure>
+    <img src="figures/frequency_analysis_welch.png"
+         alt="frequency analysis using welch"
+         height="600">
+    <figcaption> </figcaption>
+</figure>
+We clearly see that the 60Hz component has been removed and only affected a very short band around it.
+
+<figure>
+    <img src="figures/spectrogram_analysis.png"
+         alt="Spectrogram"
+         height="600">
+    <figcaption>  </figcaption>
+</figure>
+
+### 3.2 Time Domain and Perceptual Evaluation
+<figure>
+    <img src="figures/time_domain_comparison.png"
+         alt="Time Domain Analysis"
+         height="600">
+    <figcaption> Time Domain comparison between the original and filtered signal </figcaption>
+</figure>
+
+We can notice that there is little, to almost no visible change in the signal in the time domain, even when we zoom in down to 2 seconds.
+
+| Metric | Original Signal | Filtered Signal | Difference |
+|--------|----------------|-----------------|------------|
+| Mean (µV) | 0.2134 | 0.2134 | -0.0000 |
+| Std Dev (µV) | 234.3411 | 234.2809 | -0.0602 |
+| RMS (µV) | 234.3411 | 234.2809 | -0.0602 |
+| **Error Metrics** | | | |
+| Mean Squared Error (µV²) | - | - | 20.0366 |
+| Root Mean Squared Error (µV) | - | - | 4.4762 |
+| **Frequency Domain** | | | |
+| Noise Reduction (50-100 Hz, dB) | - | - | 0.94 |
 ## Part 4: Filter Designer Usage
 Though the results of the python implementations ended up performing worse than the MATLAB implementations, we would consider this expected as the python implementations were made under a tight time frame with high simplicity in mind.
 ### Least Squares FIR Filter Implementation
