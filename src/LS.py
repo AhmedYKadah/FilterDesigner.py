@@ -26,7 +26,7 @@ def _LS(order, Hd, weights=0):
 """
 2- Implementation of Weighted Least Squares ## UNTESTED
 """
-def _WLS(order, Hd, n, weights):
+def _WLS(order, Hd, weights):
     if order%2==0:
         order+=1
     L=(order+1)/2 # Number of unique coefficients on one side of a symmetric filter
@@ -39,7 +39,7 @@ def _WLS(order, Hd, n, weights):
     F[:,0]=F[:,0]/2 # Setting first column to all ones (h[0] is not repeated)
     FT=np.transpose(F) 
 
-    h= (np.linalg.inv(FT @ weights @ F) @ FT ) @ weights @ Hd.reshape(-1,1) # Least-Squares exact solution
+    h= (np.linalg.inv(FT @ np.diag(weights) @ F) @ FT ) @ np.diag(weights) @ Hd.reshape(-1,1) # Least-Squares exact solution
 
     return np.concatenate((h[::-1][:-1],h))
 

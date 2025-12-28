@@ -8,8 +8,8 @@ def _NotchDF(fc,fs,B):
 
     z=np.exp(fc/fs*2*np.pi*1j)
 
-    b,a=_pz2iir([zz*(1-B/fs),np.conj(zz)*(1-B/fs)],
-            [zz,np.conj(zz)])
+    b,a=_pz2iir([z*(1-B/fs),np.conj(z)*(1-B/fs)],
+            [z,np.conj(z)])
     return b,a
 
     pass
