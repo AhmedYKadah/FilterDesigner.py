@@ -101,11 +101,12 @@ We create an initial filtering stage to get the filters which meet the minimum s
 ### 2.2 Decision Analysis
 | File name | Stop Band Attenuation ($w=0.3$) | Passband Ripple ($w=0.3$)| Complexity ($w=0.1$)|  Coefficients ($w=0.2$)| Phase Linearity ($w=0.1$)| Utility |
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
-| Notching.mat | 285.18 | 0.03 | 9 | 5 | 0 | Matlab |
-| IIR 4th-order filter.mat | 88.73 | 0.05 | 17 | 11 | 0.3 | Matlab |
-| IIR 4th-order Chebyshev I.mat | 69.62 | 1 | 17 | 11 | 0.5 | Matlab |
-| IIR 4th-order Chebyshev II.mat | 11.00 | 0.02 | 17 | 11 | 0 | Matlab |
-
+| Notching.mat | 285.18 | 0.03 | 9 | 5 | 0 | 8 |
+| IIR 4th-order filter.mat | 88.73 | 0.05 | 17 | 11 | 0.3 | 7 |
+| IIR 4th-order Chebyshev I.mat | 69.62 | 1 | 17 | 11 | 0.5 | 8 |
+| IIR 4th-order Chebyshev II.mat | 11.00 | 0.02 | 17 | 11 | 0 | 6 |
+| python_pz_Filter.mat | 300.00 | 0.83 | 9 | 5 | 0 | 7 |
+| python_df_Filter.mat | 292.04 | 0.68 | 9 | 5 | 0 | 7.5 |
 ### 2.3 Implementation and Validation
 
 ## Part 3: Performance Evaluation
