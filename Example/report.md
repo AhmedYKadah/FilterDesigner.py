@@ -170,7 +170,7 @@ $\min (\mathbf{H_d}-\mathbf{\hat{H}_d})^2$
 
 Defining vectors for frequency samples and creating the Fourier matrix corresponding to 
 
-$\mathbf{\Omega}= 
+$$\mathbf{\Omega}= 
 \begin{bmatrix} 
 \omega_0 \\ 
 \omega_1 \\ 
@@ -182,8 +182,8 @@ $\mathbf{\Omega}=
 1 & 
 \dots & 
 n
-\end{bmatrix}$
-$
+\end{bmatrix}$$
+$$
 \mathbf{E_y}=
 \begin{bmatrix} 
 1 \\
