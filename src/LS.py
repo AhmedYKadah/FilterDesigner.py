@@ -24,7 +24,7 @@ def _LS(order, Hd, weights=0):
     pass
 
 """
-2- Implementation of Weighted Least Squares ## UNTESTED
+2- Implementation of Weighted Least Squares 
 """
 def _WLS(order, Hd, weights):
     if order%2==0:
